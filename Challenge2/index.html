@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Trirong:400,700|Trirong" rel="stylesheet"> <!-- Found font style on gooogleapis-->
+        <link rel="stylesheet" href="./assets/css/style.css"> <!-- link css sheet-->
+        <title>Joe Chaaya Portfolio Website</title>
+    </head>
+
+    <body>
+        <header>
+            <span class="span-background title"> <!--title background for class-->
+                <h1>Joe Chaaya</h1>
+            </span>
+            <nav>
+                <ul class="nav-effects"> <!-- header for the navigation bar-->
+                    <li>
+                        <a href="#about-me">About Me</a> <!--about me anchor element-->
+                    </li>
+                    <li>
+                        <a href="#work">Work</a> <!--work anchor element-->
+                    </li>
+                    <li>
+                        <a href ="#contact-me">Contact Me</a> <!--contact me anchor element-->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+    
+        <section class="hero"> <!--hero section-->
+            <div>
+                <img style="float: left; margin: 0px 0px 0px 0px;" src="./assets/images/pfp.jpg"  /> <!--inserted profile picture trying to align photo to left but having trouble -->
+                
+            </div>
+            <div class="hero-subtitle">
+
+                    <span class="span-background opacity">Welcome Everyone!</span> <!-- background subtitle-->
+            </div>
+        </section>
+    
+    <article>
+        <div id="about me" class="about-me-wrapper"> <!--links ID's to header nav and flex wrapper-->
+            <div class="about-me-grid-container"> <!--grid container-->
+               <div class="about-me-item about-me-title">
+                   <p> About me</p>
+               </div> 
+               <div class="about-me-item p1"> <!--grid item-->
+                   <p>My name is Joe Chaaya. I am 27 years old and am currently employed in the courier and logistics industry and deal with all things supply chain related. My main goal is to learn the skills required to enter the software development field and work on the products we use in dispatching</p>
+               </div>
+               <div class="about-me-item p2"> <!--grid item-->
+                   <p>I graduated from Laurentian University and received a Specilization in Psychology, I have also completed the courses offered by CITT which educates on all things related to the Supply Chain industry and have received my CCLP certification</p>
+               </div>
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div id="work" class="work-wrapper"> <!--links ID's to header nav and flex wrapper-->
+            <div class="work-grid-container"> <!--grid container-->
+                <div class="work-item work-title">
+                    <p> Work </p>
+                </div>
+            
+            
+            
+                <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor"> <!--grid item -->
+                    <span class="span-background">
+                        <h3> Horiseon Services Code Refactor </h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+            </div>
+        </div>
+    </article>
+    
+    <footer>
+        <div id="contact me" class="footer-wrapper"> <!--links ID's to header nav and flex wrapper-->
+            <div class="footer-container"> <!--grid container-->
+
+                <div class="footer-grid-item contact-me">
+                    Contact Me 
+                </div>
+            <div class="footer-grid-item phone"> <!--grid item-->
+                <a href="Cell:647-300-5281" class="nav-effects">647-300-5281</a>
+            </div>
+            <div class="footer-grid-item email"> <!--grid item-->
+                <a href="mailto:joechaaya07@gmail.com">joechaaya07@gmail.com</a>
+            </div>    
+            <div class="footer-grid-item git-hub"> <!--grid item-->
+                <a href="https://github.com/joechaaya/" target="_blank">Github</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        function projectClicked(input){
+            var input = input;
+
+            if (input == "challenge-1-refactor");
+                  
+                window.open("https://github.com/joechaaya/projects/blob/main/challenge1/Develop/index.html"); 
+        } 
+    </script>
+    
+    
+    </body>
+
+    </html>
